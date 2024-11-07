@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mahajani&family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mahajani&family=Rubik+Microbe&display=swap');
+body{
+    background-color:hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: hsl(228, 12%, 48%);
+}
+#product-card{
+    height: 70vh;
+    width: 45vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:row;
+    box-shadow: 0px 0px 50px -7px rgba(0,0,0,0.1);
+}
+#product-card #product-image{
+    height: 100%;
+    width: 50%;
+}
+#product-card #product-image #product{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+#product-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+    padding: 5%;
+}
+#product-desc #product-type{
+    letter-spacing: 4px;
+    
+}
+#product-desc #product-title{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: black;
+    font-size: 38px;
+}
+#product-desc #product-text{
+    word-spacing: 2px;
+    line-height: 22px;
+}
+
+#product-desc #product-price {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+#product-desc #product-price #current-price{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 38px;
+}
+#product-desc #product-price #old-price{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+#product-desc #buy-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 90%;
+    padding: 5%;
+    color: white;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    box-shadow: 0px 5px 0px 0px hsl(157, 36%, 23%);
+}
+#gap{
+    height: 3vh;
+}
+#product-desc #buy-button:hover{
+    transform: translateY(5px);
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: none;
+}
